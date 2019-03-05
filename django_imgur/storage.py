@@ -3,7 +3,7 @@ import base64
 try:
     from cStringIO import StringIO
 except ImportError:
-    from StringIO import StringIO
+    from io import StringIO
 from django.core.cache import cache
 from django.core.files import File
 from django.core.files.storage import Storage
